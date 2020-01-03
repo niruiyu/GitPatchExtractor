@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="OnLoad">
+  <contextMenus>
+    <contextMenu idMso="ContextMenuMailItem">
+      <menuSeparator id="Separator1" />
+      <button id="menuExtractPatch"
+              label="Extract Patch"
+              onAction="OnExtractPatch"
+              getImage="GetCustomImage"
+              getVisible="GetVisible"/>
+    </contextMenu>
+    <contextMenu idMso="ContextMenuMultipleItems">
+      <menuSeparator id="Separator2" />
+      <button id="menuExtractPatches"
+              label="Extract Patches"
+              onAction="OnExtractPatch"
+              getImage="GetCustomImage"
+              getVisible="GetVisible"/>
+    </contextMenu>
+  </contextMenus>
+</customUI>
+

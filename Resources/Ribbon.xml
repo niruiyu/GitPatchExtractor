@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"
+          onLoad="OnLoad">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabReadMessage">
+        <group id="GitPatchExtractor"
+               label="GIT Patch"
+               insertAfterMso="GroupRespond"
+               getVisible="GetVisible">
+          <button id="btnExtractPatch"
+            label="Extract Patch"
+            size="large"
+            getImage="GetCustomImage"
+            description="Extract GIT Patch"
+            supertip="Extract GIT format patch from current mail."
+            onAction="OnExtractPatch"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
